@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20042E41CE8ABFB0073AC03 /* QKCLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20042E31CE8ABFB0073AC03 /* QKCLPickerView.m */; };
 		F2F6B6BC1CE75FE200C8BABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6B6BB1CE75FE200C8BABA /* AppDelegate.swift */; };
 		F2F6B6BE1CE75FE200C8BABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6B6BD1CE75FE200C8BABA /* ViewController.swift */; };
 		F2F6B6C11CE75FE200C8BABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6B6BF1CE75FE200C8BABA /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F20042E21CE8ABFB0073AC03 /* QKCLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKCLPickerView.h; sourceTree = "<group>"; };
+		F20042E31CE8ABFB0073AC03 /* QKCLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKCLPickerView.m; sourceTree = "<group>"; };
 		F2F6B6B81CE75FE200C8BABA /* pickerkViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickerkViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6B6BB1CE75FE200C8BABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F6B6BD1CE75FE200C8BABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		F2F6B6C21CE75FE200C8BABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2F6B6C51CE75FE200C8BABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2F6B6C71CE75FE200C8BABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F6B6CF1CE765E500C8BABA /* pickerkViewSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pickerkViewSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,15 @@
 		F2F6B6BA1CE75FE200C8BABA /* pickerkViewSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F20042E21CE8ABFB0073AC03 /* QKCLPickerView.h */,
+				F20042E31CE8ABFB0073AC03 /* QKCLPickerView.m */,
 				F2F6B6BB1CE75FE200C8BABA /* AppDelegate.swift */,
 				F2F6B6BD1CE75FE200C8BABA /* ViewController.swift */,
 				F2F6B6BF1CE75FE200C8BABA /* Main.storyboard */,
 				F2F6B6C21CE75FE200C8BABA /* Assets.xcassets */,
 				F2F6B6C41CE75FE200C8BABA /* LaunchScreen.storyboard */,
 				F2F6B6C71CE75FE200C8BABA /* Info.plist */,
+				F2F6B6CF1CE765E500C8BABA /* pickerkViewSwift-Bridging-Header.h */,
 			);
 			path = pickerkViewSwift;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20042E41CE8ABFB0073AC03 /* QKCLPickerView.m in Sources */,
 				F2F6B6BE1CE75FE200C8BABA /* ViewController.swift in Sources */,
 				F2F6B6BC1CE75FE200C8BABA /* AppDelegate.swift in Sources */,
 			);
@@ -249,10 +257,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = pickerkViewSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = quy.home.pickerkViewSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pickerkViewSwift/pickerkViewSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +271,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = pickerkViewSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = quy.home.pickerkViewSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pickerkViewSwift/pickerkViewSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +299,7 @@
 				F2F6B6CC1CE75FE200C8BABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
