@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F20042E41CE8ABFB0073AC03 /* QKCLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20042E31CE8ABFB0073AC03 /* QKCLPickerView.m */; };
+		F20042E41CE8ABFB0073AC03 /* CSPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F20042E31CE8ABFB0073AC03 /* CSPickerView.m */; };
 		F2F6B6BC1CE75FE200C8BABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6B6BB1CE75FE200C8BABA /* AppDelegate.swift */; };
 		F2F6B6BE1CE75FE200C8BABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6B6BD1CE75FE200C8BABA /* ViewController.swift */; };
 		F2F6B6C11CE75FE200C8BABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2F6B6BF1CE75FE200C8BABA /* Main.storyboard */; };
@@ -16,8 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F20042E21CE8ABFB0073AC03 /* QKCLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QKCLPickerView.h; sourceTree = "<group>"; };
-		F20042E31CE8ABFB0073AC03 /* QKCLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QKCLPickerView.m; sourceTree = "<group>"; };
+		F20042E21CE8ABFB0073AC03 /* CSPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSPickerView.h; sourceTree = "<group>"; };
+		F20042E31CE8ABFB0073AC03 /* CSPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSPickerView.m; sourceTree = "<group>"; };
 		F2F6B6B81CE75FE200C8BABA /* pickerkViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pickerkViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2F6B6BB1CE75FE200C8BABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2F6B6BD1CE75FE200C8BABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		F2F6B6BA1CE75FE200C8BABA /* pickerkViewSwift */ = {
 			isa = PBXGroup;
 			children = (
-				F20042E21CE8ABFB0073AC03 /* QKCLPickerView.h */,
-				F20042E31CE8ABFB0073AC03 /* QKCLPickerView.m */,
+				F20042E21CE8ABFB0073AC03 /* CSPickerView.h */,
+				F20042E31CE8ABFB0073AC03 /* CSPickerView.m */,
 				F2F6B6BB1CE75FE200C8BABA /* AppDelegate.swift */,
 				F2F6B6BD1CE75FE200C8BABA /* ViewController.swift */,
 				F2F6B6BF1CE75FE200C8BABA /* Main.storyboard */,
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F20042E41CE8ABFB0073AC03 /* QKCLPickerView.m in Sources */,
+				F20042E41CE8ABFB0073AC03 /* CSPickerView.m in Sources */,
 				F2F6B6BE1CE75FE200C8BABA /* ViewController.swift in Sources */,
 				F2F6B6BC1CE75FE200C8BABA /* AppDelegate.swift in Sources */,
 			);

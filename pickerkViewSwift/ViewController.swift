@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController,QKCLPickerViewDelegate {
-    var pickerView : QKCLPickerView! = nil
+class ViewController: UIViewController,CSPickerViewDelegate {
+    var pickerView : CSPickerView! = nil
    
     @IBOutlet weak var dateTimeButton: UIButton!
     @IBAction func showPicker(sender: AnyObject) {
@@ -18,7 +18,7 @@ class ViewController: UIViewController,QKCLPickerViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerView = QKCLPickerView()
+        pickerView = CSPickerView()
         pickerView.delegate = self
        
         print(pickerView.pickerYear)
@@ -28,7 +28,7 @@ class ViewController: UIViewController,QKCLPickerViewDelegate {
         
       
     }
-    func donePickerView(pickerView: QKCLPickerView!, selectedIndexMonth: Int, selectedIndexYear: Int) {
+    func donePickerView(pickerView: CSPickerView!, selectedIndexMonth: Int, selectedIndexYear: Int) {
         var monthString: String!
         let realMonth = selectedIndexMonth + 1
         if (realMonth < 10 ){

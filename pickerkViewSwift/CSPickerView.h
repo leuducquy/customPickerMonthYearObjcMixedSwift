@@ -2,17 +2,17 @@
 //  QKPickerView.h
 //  quicker-cl-ios
 //
-//  Created by Nguyen Viet Thang on 6/4/15.
+//  Created by quy on 5/14/16.
 //  Copyright (c) 2015 Trente VietNam. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@protocol QKCLPickerViewDelegate;
+@protocol CSPickerViewDelegate;
 
-@interface QKCLPickerView : UIView <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface CSPickerView : UIView <UIPickerViewDelegate, UIPickerViewDataSource>
 
-@property (weak, nonatomic) id <QKCLPickerViewDelegate> delegate;
+@property (weak, nonatomic) id <CSPickerViewDelegate> delegate;
 @property (nonatomic) NSInteger selectedIndexMonth;
 @property (nonatomic) NSInteger selectedIndexYear;
 @property (strong, nonatomic) NSArray *pickerMonthArray;
@@ -24,10 +24,10 @@
 @end
 
 
-@protocol QKCLPickerViewDelegate <NSObject>
+@protocol CSPickerViewDelegate <NSObject>
 
-- (void)donePickerView:(QKCLPickerView *)pickerView selectedIndexMonth:(NSInteger)selectedIndexMonth selectedIndexYear:(NSInteger)selectedIndexYear;
+- (void)donePickerView:(CSPickerView *)pickerView selectedIndexMonth:(NSInteger)selectedIndexMonth selectedIndexYear:(NSInteger)selectedIndexYear;
 
 @optional
-- (void)cancelPickerView:(QKCLPickerView *)pickerView;
+- (void)cancelPickerView:(CSPickerView *)pickerView;
 @end

@@ -2,18 +2,18 @@
 //  QKPickerView.m
 //  quicker-cl-ios
 //
-//  Created by Nguyen Viet Thang on 6/4/15.
+//  Created by quy on 5/14/16.
 //  Copyright (c) 2015 Trente VietNam. All rights reserved.
 //
 
-#import "QKCLPickerView.h"
+#import "CSPickerView.h"
 
 
 
-@interface QKCLPickerView ()
+@interface CSPickerView ()
 @property (strong, nonatomic) UIWindow *keyWindow;
 @end
-@implementation QKCLPickerView
+@implementation CSPickerView
 
 - (id)init {
     self = [super init];
